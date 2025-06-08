@@ -2,60 +2,87 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>КрасПТС — аренда спецтехники</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="icon" href="logo.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>КрасПТС - Аутсорс снабжения и аренда спецтехники</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Не забудьте загрузить ваш логотип и иконку сайта (favicon) -->
+    <link rel="icon" href="path/to/your/favicon.png" type="image/png">
 </head>
-<body class="bg-white text-gray-800 font-sans">
-  <header class="bg-red-600 text-white p-4 flex items-center justify-between shadow-md">
-    <div class="flex items-center gap-3">
-      <img src="logo.png" alt="КрасПТС" class="h-10 w-auto" />
-      <span class="text-xl font-bold">КрасПТС</span>
-    </div>
-    <div class="text-sm sm:text-base">
-      <a href="tel:+79509897979" class="mr-4 hover:underline">+7-950-989-7979</a>
-      <a href="https://t.me/Timofei797" target="_blank" class="hover:underline">Telegram</a>
-    </div>
-  </header>
+<body>
 
-  <section class="text-center py-12 px-4">
-    <h1 class="text-4xl font-bold mb-4 text-gray-900">Аренда спецтехники в Красноярске</h1>
-    <p class="text-lg text-gray-700 max-w-2xl mx-auto">Экскаваторы, погрузчики, бульдозеры, автокраны, самосвалы, тралы, катки, фрезы, грейдеры и многое другое — с гарантией и на выгодных условиях.</p>
-  </section>
+    <!-- ШАПКА САЙТА -->
+    <header class="site-header">
+        <a href="index.html" class="logo">
+            <!-- Используйте горизонтальный логотип на белом фоне -->
+            <img src="path/to/your/logo-horizontal-dark-text.png" alt="Логотип КрасПТС">
+        </a>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="technika.html">Каталог техники</a>
+            <a href="about.html">О нас</a>
+            <a href="contacts.html">Контакты</a>
+        </nav>
+    </header>
 
-  <section class="py-8 px-4 bg-gray-100">
-    <div class="max-w-5xl mx-auto grid sm:grid-cols-2 md:grid-cols-3 gap-6 text-center">
-      <div class="bg-white p-4 rounded shadow">
-        <h2 class="text-lg font-semibold mb-2">Экскаваторы</h2>
-        <p class="text-sm text-gray-600">Колёсные, гусеничные, экскаваторы-погрузчики</p>
-      </div>
-      <div class="bg-white p-4 rounded shadow">
-        <h2 class="text-lg font-semibold mb-2">Погрузчики</h2>
-        <p class="text-sm text-gray-600">Фронтальные, вилочные, бульдозеры</p>
-      </div>
-      <div class="bg-white p-4 rounded shadow">
-        <h2 class="text-lg font-semibold mb-2">Краны и манипуляторы</h2>
-        <p class="text-sm text-gray-600">Автокраны, манипуляторы, автовышки</p>
-      </div>
-      <div class="bg-white p-4 rounded shadow">
-        <h2 class="text-lg font-semibold mb-2">Тралы и эвакуаторы</h2>
-        <p class="text-sm text-gray-600">Низкорамные платформы, эвакуаторы</p>
-      </div>
-      <div class="bg-white p-4 rounded shadow">
-        <h2 class="text-lg font-semibold mb-2">Дорожная техника</h2>
-        <p class="text-sm text-gray-600">Катки, асфальтоукладчики, фрезы, грейдеры</p>
-      </div>
-      <div class="bg-white p-4 rounded shadow">
-        <h2 class="text-lg font-semibold mb-2">Навесное оборудование</h2>
-        <p class="text-sm text-gray-600">Гидромолоты и другое оборудование</p>
-      </div>
-    </div>
-  </section>
+    <main>
+        <!-- ГЛАВНЫЙ ЭКРАН -->
+        <section class="hero">
+            <h1>Аренда спецтехники</h1>
+            <p>Надежная техника для любых строительных и дорожных задач в Красноярске</p>
+        </section>
 
-  <footer class="bg-gray-800 text-white text-center py-6 mt-12">
-    <p>© 2025 КрасПТС. Аренда спецтехники. Все права защищены.</p>
-  </footer>
+        <!-- СЕКЦИЯ С КАТАЛОГОМ -->
+        <section class="catalog-section container">
+            <h2>Каталог техники</h2>
+            <div class="category-grid">
+
+                <!-- Карточка 1: Самосвалы -->
+                <a href="samosvaly.html" class="category-card">
+                    <div class="card-image">
+                        <!-- Найдите красивое фото самосвала -->
+                        <img src="path/to/your/samosval-image.jpg" alt="Самосвалы">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Самосвалы</h3>
+                    </div>
+                </a>
+
+                <!-- Карточка 2: Тягачи -->
+                <a href="tyagachi.html" class="category-card">
+                    <div class="card-image">
+                        <img src="path/to/your/tyagach-image.jpg" alt="Тягачи">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Тягачи</h3>
+                    </div>
+                </a>
+
+                <!-- Карточка 3: Полуприцепы -->
+                <a href="polupricepy.html" class="category-card">
+                    <div class="card-image">
+                        <img src="path/to/your/polupricep-image.jpg" alt="Полуприцепы">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Полуприцепы</h3>
+                    </div>
+                </a>
+
+                <!-- Добавьте остальные категории по аналогии -->
+                 <a href="spectehnika.html" class="category-card">
+                    <div class="card-image">
+                        <img src="path/to/your/excavator-image.jpg" alt="Спецтехника">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Спецтехника</h3>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Здесь будет подвал (footer) сайта, пока можно оставить пустым -->
+
 </body>
 </html>
