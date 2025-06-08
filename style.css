@@ -1,0 +1,31 @@
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+.bg-red-700 { background-color: #b91c1c; }
+.text-white { color: #fff; }
+.text-gray-900 { color: #111827; }
+.text-gray-600 { color: #4b5563; }
+.bg-white { background-color: #ffffff; }
+.bg-gray-100 { background-color: #f3f4f6; }
+.font-bold { font-weight: 700; }
+.font-semibold { font-weight: 600; }
+.text-sm { font-size: 0.875rem; }
+.text-2xl { font-size: 1.5rem; }
+.text-3xl { font-size: 1.875rem; }
+.underline { text-decoration: underline; }
+.p-6 { padding: 1.5rem; }
+.px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
+.py-4 { padding-top: 1rem; padding-bottom: 1rem; }
+.mt-8 { margin-top: 2rem; }
+.mb-4 { margin-bottom: 1rem; }
+.mb-6 { margin-bottom: 1.5rem; }
+.max-w-4xl { max-width: 56rem; }
+.mx-auto { margin-left: auto; margin-right: auto; }
+.flex { display: flex; }
+.justify-between { justify-content: space-between; }
+.items-center { align-items: center; }
+.text-center { text-align: center; }
+.list-disc { list-style-type: disc; }
+.list-inside { list-style-position: inside; }
+.space-y-2 > :not([hidden]) ~ :not([hidden]) { margin-top: 0.5rem; }
