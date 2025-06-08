@@ -1,31 +1,86 @@
-body {
-  font-family: sans-serif;
-  line-height: 1.5;
+/* --- style.css --- */
+
+/* Используем переменные для цветов из вашего брендбука для удобства */
+:root {
+  --brand-teal-bright: #00968c; /* Яркий бирюзовый */
+  --brand-teal-dark: #004c42;   /* Темно-зеленый для фона */
+  --brand-text-dark: #002019;  /* Очень темный для текста */
+  --brand-white: #ffffff;
+  --brand-light-gray: #e6e6e6; /* Светло-серый для футера */
+  --brand-text-gray: #5b5b5b;   /* Темно-серый для текста в футере */
 }
-.bg-red-700 { background-color: #b91c1c; }
-.text-white { color: #fff; }
-.text-gray-900 { color: #111827; }
-.text-gray-600 { color: #4b5563; }
-.bg-white { background-color: #ffffff; }
-.bg-gray-100 { background-color: #f3f4f6; }
-.font-bold { font-weight: 700; }
-.font-semibold { font-weight: 600; }
-.text-sm { font-size: 0.875rem; }
-.text-2xl { font-size: 1.5rem; }
-.text-3xl { font-size: 1.875rem; }
-.underline { text-decoration: underline; }
-.p-6 { padding: 1.5rem; }
-.px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
-.py-4 { padding-top: 1rem; padding-bottom: 1rem; }
-.mt-8 { margin-top: 2rem; }
-.mb-4 { margin-bottom: 1rem; }
-.mb-6 { margin-bottom: 1.5rem; }
-.max-w-4xl { max-width: 56rem; }
-.mx-auto { margin-left: auto; margin-right: auto; }
-.flex { display: flex; }
-.justify-between { justify-content: space-between; }
-.items-center { align-items: center; }
-.text-center { text-align: center; }
-.list-disc { list-style-type: disc; }
-.list-inside { list-style-position: inside; }
-.space-y-2 > :not([hidden]) ~ :not([hidden]) { margin-top: 0.5rem; }
+
+/* Общие стили для всей страницы */
+body {
+  font-family: 'Futura PT Cond', sans-serif; /* Используем шрифт из брендбука. Если он не установлен, будет стандартный sans-serif */
+  line-height: 1.6;
+  margin: 0;
+  background-color: var(--brand-white);
+  color: var(--brand-text-dark);
+}
+
+/* Стили для хедера (шапки сайта) */
+header {
+  background-color: var(--brand-teal-dark); /* Темный фон из брендбука */
+  color: var(--brand-white);
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img.logo {
+  height: 48px; /* Размер логотипа */
+}
+
+header .contacts {
+  text-align: right;
+  font-size: 0.9rem;
+}
+
+header a {
+  color: var(--brand-white);
+  text-decoration: underline;
+}
+
+/* Основное содержимое страницы */
+main {
+  padding: 1.5rem;
+  max-width: 56rem;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 1.875rem;
+  font-weight: 700; /* Extra Bold */
+  margin-bottom: 1rem;
+  color: var(--brand-text-dark);
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Стили для списка техники */
+ul {
+  list-style-type: disc;
+  list-style-position: inside;
+  padding-left: 0;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Стили для футера (подвала сайта) */
+footer {
+  background-color: var(--brand-light-gray);
+  color: var(--brand-text-gray);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.875rem;
+}
