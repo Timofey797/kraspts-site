@@ -1,52 +1,61 @@
-<!-- index.html -->
 
 <!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>КрасПТС — Аутсорс снабжения и аренда спецтехники</title>
-  <link href="style.css" rel="stylesheet" />
+  <title>КрасПТС — аренда спецтехники</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="logo.png" type="image/png">
 </head>
-<body>
-
-  <!-- Я использовал горизонтальный логотип с белым текстом для темного фона, как в брендбуке -->
-  <header>
-    <img src="logo.png" alt="Логотип КрасПТС" class="logo" />
-    <div class="contacts">
-      <p>Тел: <a href="tel:+79509897979">+7-950-989-7979</a></p>
-      <p>Telegram: <a href="https://t.me/Timofei797">@Timofei797</a></p>
+<body class="bg-white text-gray-800 font-sans">
+  <header class="bg-red-600 text-white p-4 flex items-center justify-between shadow-md">
+    <div class="flex items-center gap-3">
+      <img src="logo.png" alt="КрасПТС" class="h-10 w-auto" />
+      <span class="text-xl font-bold">КрасПТС</span>
+    </div>
+    <div class="text-sm sm:text-base">
+      <a href="tel:+79509897979" class="mr-4 hover:underline">+7-950-989-7979</a>
+      <a href="https://t.me/Timofei797" target="_blank" class="hover:underline">Telegram</a>
     </div>
   </header>
 
-  <main>
-    <h1>Услуги спецтехники и аутсорс снабжения</h1>
-    <p>Предоставляем аренду различной спецтехники и комплексное снабжение объектов по Красноярску и краю.</p>
+  <section class="text-center py-12 px-4">
+    <h1 class="text-4xl font-bold mb-4 text-gray-900">Аренда спецтехники в Красноярске</h1>
+    <p class="text-lg text-gray-700 max-w-2xl mx-auto">Экскаваторы, погрузчики, бульдозеры, автокраны, самосвалы, тралы, катки, фрезы, грейдеры и многое другое — с гарантией и на выгодных условиях.</p>
+  </section>
 
-    <h2>Наша техника:</h2>
-    <ul>
-      <li>Экскаваторы колесные</li>
-      <li>Экскаваторы гусеничные</li>
-      <li>Экскаваторы-погрузчики</li>
-      <li>Фронтальные погрузчики</li>
-      <li>Бульдозеры</li>
-      <li>Самосвалы</li>
-      <li>Автокраны</li>
-      <li>Манипуляторы</li>
-      <li>Автовышки</li>
-      <li>Тралы / Автотралы</li>
-      <li>Дорожные катки</li>
-      <li>Асфальтоукладчики</li>
-      <li>Фрезы дорожные</li>
-      <li>Грейдеры</li>
-      <li>Грузовые эвакуаторы</li>
-      <li>Гидромолоты (навесное оборудование)</li>
-    </ul>
-  </main>
+  <section class="py-8 px-4 bg-gray-100">
+    <div class="max-w-5xl mx-auto grid sm:grid-cols-2 md:grid-cols-3 gap-6 text-center">
+      <div class="bg-white p-4 rounded shadow">
+        <h2 class="text-lg font-semibold mb-2">Экскаваторы</h2>
+        <p class="text-sm text-gray-600">Колёсные, гусеничные, экскаваторы-погрузчики</p>
+      </div>
+      <div class="bg-white p-4 rounded shadow">
+        <h2 class="text-lg font-semibold mb-2">Погрузчики</h2>
+        <p class="text-sm text-gray-600">Фронтальные, вилочные, бульдозеры</p>
+      </div>
+      <div class="bg-white p-4 rounded shadow">
+        <h2 class="text-lg font-semibold mb-2">Краны и манипуляторы</h2>
+        <p class="text-sm text-gray-600">Автокраны, манипуляторы, автовышки</p>
+      </div>
+      <div class="bg-white p-4 rounded shadow">
+        <h2 class="text-lg font-semibold mb-2">Тралы и эвакуаторы</h2>
+        <p class="text-sm text-gray-600">Низкорамные платформы, эвакуаторы</p>
+      </div>
+      <div class="bg-white p-4 rounded shadow">
+        <h2 class="text-lg font-semibold mb-2">Дорожная техника</h2>
+        <p class="text-sm text-gray-600">Катки, асфальтоукладчики, фрезы, грейдеры</p>
+      </div>
+      <div class="bg-white p-4 rounded shadow">
+        <h2 class="text-lg font-semibold mb-2">Навесное оборудование</h2>
+        <p class="text-sm text-gray-600">Гидромолоты и другое оборудование</p>
+      </div>
+    </div>
+  </section>
 
-  <footer>
-    © 2024 КрасПТС. Все права защищены.
+  <footer class="bg-gray-800 text-white text-center py-6 mt-12">
+    <p>© 2025 КрасПТС. Аренда спецтехники. Все права защищены.</p>
   </footer>
-
 </body>
 </html>
